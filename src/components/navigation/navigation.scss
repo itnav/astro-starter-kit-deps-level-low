@@ -1,0 +1,53 @@
+app-navigation {
+  display: grid;
+  grid-template-areas:
+    '.    astro      .'
+    '.    astro      .'
+    'cat    .    shiba'
+    'cat   bird  shiba'
+    '.     bird      .';
+  gap: 16px 48px;
+  margin-bottom: 40px;
+
+  .icon-link {
+    transition: filter 300ms;
+    will-change: filter;
+  }
+
+  .astro {
+    grid-area: astro;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #d83333aa);
+    }
+  }
+
+  .cat {
+    grid-area: cat;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #ffc022aa);
+    }
+  }
+
+  .bird {
+    grid-area: bird;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #7094a6aa);
+    }
+  }
+
+  .shiba {
+    grid-area: shiba;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #fabb4caa);
+    }
+  }
+
+  .icon {
+    width: 96px;
+    height: 96px;
+  }
+}
