@@ -32,6 +32,11 @@ export default {
     'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
 
     /**
+     * @see {@link https://stylelint.io/user-guide/rules/selector-pseudo-element-no-unknown} Documents
+     */
+    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['global'] }],
+
+    /**
      * @see {@link https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md} Documents
      */
     'scss/selector-no-union-class-name': true,
