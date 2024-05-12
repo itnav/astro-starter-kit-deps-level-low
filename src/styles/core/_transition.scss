@@ -78,7 +78,7 @@ $timing-function: $easing;
 /// ```
 @function duration($value) {
   @if meta.type-of($value) == number {
-    @return $value;
+    @return $value + 0ms;
   }
 
   $result: map.get($duration, $value);
